@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+
+    <style>
+
+/* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+/* type selector */
+      
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #9d2929;
+            margin: 20px 15px 10px 20px ;
+            padding: 5px 10px 5px 10px;
+           
+        }
+
+ /* class selector */
+
+        .highlight1{
+
+            background-color: #2b059f;
+
+        }
+
+        /* id selector */
+        #header{
+            color: darkmagenta;
+        }
+
+        /* attribute selector */
+
+        input[type='email']{
+            
+            border: 2px solid #34a1c9;
+        }
+
+
+        /* descendant selector */
+
+        article p{
+            color: rgb(68, 16, 211);
+            font-style: italic;
+            background-color: #c18181;
+            padding:2px ;
+
+        }
+
+        /* child selector */
+
+        div>p{
+            color: #0a4a82;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: gold;
+        }
+
+        /* adjacent sibling selector */
+
+        h1+p{
+            background-color: #0aff8d;
+        }
+
+        /* general sibling selector */
+        div~p{
+            color: #065eca;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #0c0e05;
+        }
+
+        /* pseudo-class selector */
+
+        a:hover{
+            background-color: green;
+        }
+
+        /* pseudo-element selector */
+
+        p::first-letter{
+            font-size:large;
+            color: red;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        /* group selector */
+
+        h1,h2{
+ background-color:lightsalmon;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div >
+
+        <Header id="header">
+            <h1>CSS Selectors</h1>
+            <h2>Selectors are used to select HTML elements based on their id, class,
+                type, attributes, and more.</h2>
+        </Header>
+
+        <div>
+
+            <h1>adjacent siiling</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <p>Selectors are the patterns used to select the elements you want to style.</p>
+        <p>There are many different types of selectors in CSS, each with its own syntax and purpose.</p>
+        <p>Some of the most common selectors include:</p>
+        <ul>
+            <li>Type Selector: Selects elements by their type (e.g., <code>div</code>, <code>p</code>, <code>h1</code>).</li>
+            <li>Class Selector: Selects elements by their class attribute (e.g., <code>.classname</code>). <ul>
+                <li>
+                    this is child decentant exaple
+                </li>
+            </ul></li>
+            
+            
+        </ul>   
+        <p>Selectors can be combined to create more complex selections. For example, you can select all <code>p</code> elements inside a <code>div</code> with a specific class:</p>
+        <p><code>div.classname p</code> selects all <code>p</code> elements inside a <code>div</code> with the class <code>classname</code>.</p>    
+        <p>Selectors are a fundamental part of CSS, allowing you to target specific elements and apply styles to them.</p>
+        <p>Understanding how to use selectors effectively is essential for writing clean and maintainable CSS.</p>
+        <p>For more information on CSS selectors, you can refer to the <a href="https://www.w3schools.com/cssref/css_selectors.asp">W3Schools CSS Selectors Reference</a>.</p>
+
+       <a href
+="https://www.w3schools.com/cssref/css_selectors.asp">W3Schools CSS Selectors Reference</a>.</p>
+
+
+      
+    </div>
+
+
+
+
+    <div>
+        <p>child</p>
+        <p>child</p>
+        <section>
+            <p>iam a decentant</p>
+        </section>
+        <p>child</p>
+    </div>
+
+    <article>
+        <p>pargraph inside article,showing decenting Selector</p>
+
+        <div>
+            <p>myname is alkshay</p>
+        </div>
+    </article>
+
+ <article>
+        <p>pargraph inside article,showing decenting Selector</p>
+    </article>
+
+    <div>
+
+        <form >
+
+            <input type="email" placeholder="Enter your email" />
+        </form>
+    </div>
+
+    <div class="highlight">
+
+        <h1>Heading highlit</h1>
+        <p class="highlight1">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+    
+</body>
+</html>
