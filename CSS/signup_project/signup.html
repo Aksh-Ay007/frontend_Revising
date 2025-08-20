@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>SignUp</title>
 
     <style>
       body {
@@ -13,71 +13,73 @@
         padding: 0;
         height: 100vh;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
       }
 
       .card {
-        background-color: #d5d4d4;
-        padding: 30px;
+        background: #d2cbcb;
         width: 300px;
+        padding: 30px;
         border-radius: 6px;
+        margin-bottom: 20px;
       }
 
       h2 {
-        
         text-align: center;
-        margin-bottom: 20px;
+        color: blue;
+        font-family: Georgia, "Times New Roman", Times, serif;
         font-weight: bold;
         font-size: 24px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        line-height: 1.2;
-        margin-top: 0;
-        margin-bottom: 20px;
-        color: #1b81da;
-        text-shadow: #1a1a1a;
       }
-    
 
       form {
         display: flex;
         flex-direction: column;
+        padding: 15px;
         gap: 15px;
+        border-radius: 6px;
+        margin-bottom: 20px;
       }
 
       input {
-        padding: 15px;
-        margin-bottom: 10px;
+        padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        color: #716f6f;
       }
 
       button {
-        padding: 15px;
-        background-color: #1b81da;
-        color: aliceblue;
-        margin-bottom: 15px;
+        padding: 10px;
+        align-items: center;
         border-radius: 6px;
+        background-color: #0a4a82;
+        color: azure;
       }
 
       button:hover {
-        background-color: #0a5bbd;
+        background-color: green;
         cursor: pointer;
+      }
+      input {
+        color: #1a1a1a;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
     <div class="card">
-      <h2>Login Form</h2>
+      <h2>SignUp</h2>
 
       <form>
+        <input type="text" placeholder="Enter your name" />
         <input type="email" placeholder="Enter your email" />
         <input type="password" placeholder="Enter your password" />
 
-        <button type="submit">submit</button>
+        <button type="submit">SignUp</button>
       </form>
     </div>
   </body>
