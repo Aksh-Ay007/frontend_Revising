@@ -117,67 +117,57 @@
         background-color: #b2a9e6;
         padding: 10px;
       }
-      .nav3 ul{
-
+      .nav3 ul {
         list-style-type: none;
         display: flex;
         justify-content: space-around;
         margin: 0;
         padding: 0;
         align-items: center;
-
       }
-        .nav3 a {
-            text-decoration: none;
-            color:#fbfdff;
-            padding: 10px;
-            display: block;
-            font-weight: bold;
-        }
+      .nav3 a {
+        text-decoration: none;
+        color: #fbfdff;
+        padding: 10px;
+        display: block;
+        font-weight: bold;
+      }
 
-        .nav3 .dorpdown-content {
-            display: none;
-            
-        }
+      .nav3 .dorpdown-content {
+        display: none;
+      }
 
-           .nav3 .dorpdown-content a {
-            position: relative;
-            
-        }
+      .nav3 .dorpdown-content a {
+        position: relative;
+      }
 
-        .nav3 .dropdown:hover .dorpdown-content{
+      .nav3 .dropdown:hover .dorpdown-content {
+        display: block;
+        position: absolute;
+        background-color: #b2a9e6;
+        min-width: 100px;
+      }
 
-            display: block; 
-            position: absolute;
-            background-color: #b2a9e6;
-            min-width: 100px;
-
-        }
-
-        .nav3 .dorpdown-content a {
-            color: #fbfdff;
-            padding: 10px;
-            text-decoration: none;
-            display: block;
-        }
-        .nav3 .dorpdown-content a::after {
-           
-            content: "";
-            position: absolute;
-            height: 2px;
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            background-color: #0a4a82;
-            transform: scaleX(0);
-            transition: transform 0.3s ease-in-out;
-
-        }
-        .nav3 .dorpdown-content a:hover::after {
-            transform: scaleX(1);
-
-        }
-      
+      .nav3 .dorpdown-content a {
+        color: #fbfdff;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+      }
+      .nav3 .dorpdown-content a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: #0a4a82;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      .nav3 .dorpdown-content a:hover::after {
+        transform: scaleX(1);
+      }
     </style>
   </head>
   <body>
