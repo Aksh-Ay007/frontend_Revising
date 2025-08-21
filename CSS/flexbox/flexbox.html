@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #d7d5d5;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .container {
+        border: 2px solid #333;
+        background-color: #d7d5d5;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+
+      .flex-container {
+        display: flex;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+
+      .pastel-1 {
+        background-color: #da2f3d;
+      }
+      .pastel-2 {
+        background-color: #16889c;
+      }
+      .pastel-3 {
+        background-color: #1db240;
+      }
+      .pastel-4 {
+        background-color: #cea41c;
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #fff;
+        margin: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+
+    <div class="container">
+      <h2>Default flex(row)</h2>
+
+      <div class="flex-container">
+        <div class="circle pastel-1">2</div>
+        <div class="circle pastel-2">1</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>flex-direction column</h2>
+
+      <div class="flex-container" style="flex-direction: column-reverse">
+        <div class="circle pastel-1">2</div>
+        <div class="circle pastel-2">1</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>justify content-space beetween</h2>
+
+      <div class="flex-container" style="justify-content: space-between">
+        <div class="circle pastel-1">2</div>
+        <div class="circle pastel-2">1</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Align items center</h2>
+
+      <div class="flex-container" style="align-items: center">
+        <div class="circle pastel-1">2</div>
+        <div class="circle pastel-2">1</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>flex Wrap</h2>
+
+      <div class="flex-container" style="flex-wrap: wrap">
+        <div class="circle pastel-1">2</div>
+        <div class="circle pastel-2">1</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>order container</h2>
+
+      <div class="flex-container" style="align-items: center">
+        <div class="circle pastel-" style="order: 5">2</div>
+        <div class="circle pastel-2" style="order: 3">1</div>
+        <div class="circle pastel-3" style="order: 4">3</div>
+        <div class="circle pastel-4" style="order: 1">4</div>
+      </div>
+    </div>
+  </body>
+</html>
